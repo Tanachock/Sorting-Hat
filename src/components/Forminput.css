@@ -1,0 +1,64 @@
+.container-input{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-top: 15px;
+}
+.input-number{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number{
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 0.5px solid rgb(49, 49, 49);
+}
+.number:focus{
+    outline: none;
+}
+.input-number button{
+    border: 0.5px solid rgb(49, 49, 49);
+    border-radius: 0 5px 5px 0;
+    padding: 5px;
+    background-color: white;
+}
+
+
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20åpx;
+    /* background-color: antiquewhite; */
+}
+.inputname-container .box-input{
+    /* background-color: aqua; */
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.box-input .name{
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px 0 0 5px;
+    border: 0.5px solid black;
+
+}
+.box-input button{
+    border: 0.5px solid black;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+}
+.box-input .name:focus{
+    outline: none;
+}
+
+  
+  
+  

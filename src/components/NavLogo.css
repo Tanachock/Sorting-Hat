@@ -1,0 +1,63 @@
+nav{
+    height: 18vh;
+    padding-top: 5px;
+}
+.container-logo{
+    position: relative;
+    background-color: rgb(220, 61, 61);
+    height: 90%;
+    width: 99%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    border: 3px solid black;
+    margin: auto;
+}
+.img-logo{
+    border: 3px solid black;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.Logo{
+    scale: 2;
+}
+
+.container-logo h2{
+    margin-left: 20px;
+    font-size: 400%;
+    color: white;
+}
+
+.Hat{
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    height: 180%;
+    animation-name: Hatmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes Hatmove{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-logo h2{
+        font-size: 250%;
+        color: white;
+    }
+}

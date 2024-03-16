@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+.animated {
+    animation: rotateLeftRight 0.2s ease forwards;
+}
+
+@keyframes rotateLeftRight {
+  0% {
+    opacity: 0;
+    transform: rotateZ(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateZ(10deg);
+  }
+  100% {
+    opacity: 2;
+    transform: rotateZ(0);
+  }
+}
+
+.team-container{
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    width: 99%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+    background-color: rgb(157, 157, 157);
+    border-radius: 15px 15px 0 0;
+}
+.box-hover{
+    overflow: scroll;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 40%;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.team-container label{
+    display: flex;
+    justify-content: center;
+}
+.label-stinky{
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+.box-hover:hover{
+    z-index: 100;
+    transition: 0.5s;
+    transform: scale(1.25);
+}
+.name-container{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-container{
+        height: 150vh;
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .box-hover{
+        width: 300px;
+        height: 200px;
+    }
+}
